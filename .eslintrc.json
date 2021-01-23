@@ -1,40 +1,39 @@
 {
   "env": {
     "browser": true,
-    "commonjs": true,
-    "es6": true,
+    "es2021": true,
     "node": true
   },
-  "parser": "babel-eslint",
-  "extends": [
-    "eslint:recommended",
-    "airbnb",
-    "airbnb/hooks",
-    "plugin:react/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:jsx-a11y/recommended",
-    "plugin:react-hooks/recommended",
-    // always put prettier at last
-    "prettier"
-  ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true // enable linting for jsx files
+      "jsx": true
     },
-    "ecmaVersion": 11,
+    "ecmaVersion": 12,
     "sourceType": "module"
   },
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "paths": ["src"]
+      }
     }
   },
-  "plugins": ["react", "react-hooks"],
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
     // NextJs specific fix: suppress errors for missing 'import React' in files for nextjs
@@ -44,6 +43,7 @@
       1,
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ], //should add ".ts" if typescript project
+
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
@@ -52,7 +52,9 @@
         "aspects": ["invalidHref", "preferButton"]
       }
     ],
+    "jsx-a11y/click-events-have-key-events": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
     "react/display-name": 1,
-    "react-hooks/rultes-of-hooks": "error"
+    "react-hooks/rules-of-hooks": "error"
   }
 }
