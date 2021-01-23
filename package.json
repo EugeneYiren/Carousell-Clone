@@ -14,7 +14,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-i18next": "^11.8.5",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@types/node": "^14.14.22",
