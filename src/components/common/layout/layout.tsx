@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import PropTypes, { InferProps } from 'prop-types'
+import Container from '@material-ui/core/Container'
 
 import NavBar from '../navBar/navBar'
 import Footer from '../footer/footer'
@@ -14,7 +15,9 @@ const Layout = ({ children }: InferProps<typeof Layout.propTypes>) => {
 
       <NavBar />
 
-      <main>{children}</main>
+      <main>
+        <Container>{children}</Container>
+      </main>
 
       <Footer />
     </div>
