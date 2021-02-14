@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Divider from '@material-ui/core/Divider'
-
+import Button from '../button/button'
 import InputGroup from '../inputGroup/inputGroup'
 
 import styles from './navBar.module.css'
@@ -47,6 +47,7 @@ const NavBar = () => {
               onChange={handleInputOnChange}
               className={styles.inputWrapper}
             />
+            <Button className={styles.buttonWrapper}>Sell</Button>
           </Toolbar>
         </AppBar>
       </Container>

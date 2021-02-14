@@ -29,6 +29,34 @@ const theme = createMuiTheme({
         },
       },
     },
+    MuiButton: {
+      root: {
+        fontFamily: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+        ].join(','),
+      },
+      contained: {
+        textTransform: 'none',
+        backgroundColor: '#FF2636',
+        color: 'white',
+        '&:focus': {
+          backgroundColor: '#CC1E2B',
+          boxShadow: '0 0 0 4px #FFD4D7',
+        },
+        '&:hover': {
+          backgroundColor: '#CC1E2B',
+        },
+      },
+    },
   },
 })
 
