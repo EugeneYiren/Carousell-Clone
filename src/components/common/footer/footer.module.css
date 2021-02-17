@@ -1,0 +1,50 @@
+.row {
+  display: flex;
+  list-style-type: none;
+  margin-left: -52px;
+  font-size: 12px;
+  align-items: center;
+}
+
+#botoes li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0.8rem;
+  vertical-align: middle;
+}
+
+#botoesCountries li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.socials {
+  padding: 3.5rem 0;
+}
+
+#socials ul {
+  padding-top: 3px;
+}
+
+.select {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: middle;
+  padding-left: 30px;
+}
+
+.wrapper {
+  appearance: none;
+  border: 1px solid #c5c5c6;
+  border-radius: 0px;
+  padding: 4px 24px 4px 16px;
+  font-size: 16px;
+  font-family: inherit;
+  -webkit-border-radius: 0px;
+  align-items: center;
+  width: 169px;
+  height: 32px;
+  background-size: 24px;
+}
