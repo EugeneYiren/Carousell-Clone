@@ -1,4 +1,4 @@
-import Layout from '../components/common/layout/layout'
+import Layout from 'components/common/layout/layout'
 
 // import styles from '../styles/pageStyles/Home.module.css'
 

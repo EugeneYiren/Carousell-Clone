@@ -57,6 +57,7 @@
     "jsx-a11y/click-events-have-key-events": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-unused-vars": ["warn"],
+    "@typescript-eslint/no-explicit-any": "off",
     "react/display-name": 1,
     "react-hooks/rules-of-hooks": "error",
     "import/extensions": [

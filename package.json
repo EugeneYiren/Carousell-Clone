@@ -9,9 +9,11 @@
     "lint-js": "eslint --ext ts,tsx src"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.11",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "clsx": "^1.1.1",
+    "graphql": "^15.5.0",
     "i18next": "^19.8.4",
     "next": "^10.0.5",
     "prop-types": "^15.7.2",
