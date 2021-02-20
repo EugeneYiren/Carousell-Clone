@@ -1,4 +1,3 @@
-import Layout from 'components/common/layout/layout'
 import { useTranslation } from 'react-i18next'
 import { useQuery } from '@apollo/client'
 
